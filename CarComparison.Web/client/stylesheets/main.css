@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.button-list button {
+  display: inline-block;
+  float: left;
+}
+
+.primary-button {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 2% 8%;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* No files to import found in Themes/**\/* */
+/* No files to import found in Vendor/**\/* */
+.cover-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/header-image3.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+}
+
+.cover-background:before {
+  background: black;
+  opacity: 0.7;
+}
+
+.hero-container {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  color: white;
+  width: 50%;
+  padding: 8% 0% 0% 48%;
+}
+.hero-container .hero-title {
+  width: 100%;
+  padding: 15% 0% 0% 0%;
+  font-size: 20px;
+}
+.hero-container .hero-sub-title {
+  width: 100%;
+  padding: 3% 0%;
+  font-size: 46px;
+}
+
+.nav {
+  width: 100%;
+}
+.nav .logo {
+  margin: 3% 20%;
+  padding-left: 3%;
+  background: url("../../../../media/paper-plane.png") no-repeat;
+}
+.nav .nav-items {
+  display: inline;
+}
+.nav .nav-items ul li {
+  color: #FFFFFF;
+}
