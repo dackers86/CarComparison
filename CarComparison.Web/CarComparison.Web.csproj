@@ -193,6 +193,9 @@
     <Content Include="client\sass\Utils\_reset.scss" />
     <Content Include="client\sass\Utils\_variables.scss" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\sass\Components\_filter.scss" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

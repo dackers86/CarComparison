@@ -1,11 +1,25 @@
 ﻿<div ng-controller="resultsCtrl">
 
-    {{selectedManufacturers}}
-
-    {{filerManufacturers}}
-    <div class="container">
-        <div ng-repeat="manufacturer in manufacturers" class="row">
-            <input type="checkbox" ng-model="carFilter.manufacturers[manufacturer.id]">{{manufacturer.name}} 
+    <div class="sidebar">
+        <div class="filter-container">
+            <div class="header">
+                Manufacturers
+            </div>
+            <div class="content">
+                <div ng-repeat="manufacturer in manufacturers">
+                    <input type="checkbox" ng-model="carFilter.manufacturers[manufacturer.id]">{{manufacturer.name}}
+                </div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="header">
+                Models
+            </div>
+            <div class="content">
+                <div ng-repeat="car in cars | filter:isFiltered" class="row">
+                    <input type="checkbox" ng-model="carFilter.models[car.model.id]">{{car.model.name}}
+                </div>
+            </div>
         </div>
     </div>
 
