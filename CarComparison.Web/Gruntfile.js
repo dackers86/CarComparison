@@ -27,22 +27,15 @@ grunt.initConfig({
           'public/stylesheets/main.css': 'client/sass/main.scss'
         }
       }
-    },
-    
-    bower_concat: {
-      all: {
-        dest: 'public/javascripts/bower.js'
-      }
     }
-    });
+});
 
-  //grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
 
   // Default task(s).
-  grunt.registerTask('default', ['compass']);
+  grunt.registerTask('default', ['compass', 'watch']);
 };
 	
