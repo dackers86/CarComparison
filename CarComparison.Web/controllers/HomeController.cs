@@ -12,6 +12,5 @@ namespace CarComparison.Web.controllers
         {
             return View("Home");
         }
-
     }
 }

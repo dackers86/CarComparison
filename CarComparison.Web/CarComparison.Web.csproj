@@ -50,9 +50,29 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -84,22 +104,6 @@
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\Examples\NancyApplication\CarComparison\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\Examples\NancyApplication\CarComparison\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\Examples\NancyApplication\CarComparison\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\Examples\NancyApplication\CarComparison\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\Examples\NancyApplication\CarComparison\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -110,13 +114,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="client\images\header-image.png" />
-    <Content Include="client\images\header-image2.png" />
-    <Content Include="client\images\header-image3.png" />
+    <Content Include="client\images\cross.png" />
     <Content Include="client\javascripts\angular\modules\app.js" />
     <Content Include="client\javascripts\angular\controllers\results.js" />
     <Content Include="client\javascripts\angular\services\carService.js" />
-    <Content Include="client\javascripts\vendor\bower.js" />
+    <Content Include="client\javascripts\site.js" />
+    <Content Include="client\javascripts\vendor\tympanus\classie.js" />
+    <Content Include="client\javascripts\vendor\tympanus\modernizr.custom.js" />
     <Content Include="client\partials\account.html" />
     <Content Include="client\partials\home.html" />
     <Content Include="client\partials\login.html" />
@@ -153,12 +157,7 @@
     <Content Include="client\sass\base\_normalise.scss" />
     <Content Include="client\sass\base\_reset.scss" />
     <Content Include="client\sass\base\_typography.scss" />
-    <Content Include="client\sass\Components\_carousel.scss" />
-    <Content Include="client\sass\Components\_cover.scss" />
-    <Content Include="client\sass\Components\_hero.scss" />
     <Content Include="client\sass\Components\_mainMenu.scss" />
-    <Content Include="client\sass\Components\_media.scss" />
-    <Content Include="client\sass\Components\_thumbnails.scss" />
     <Content Include="client\sass\Layout\_footer.scss" />
     <Content Include="client\sass\Layout\_forms.scss" />
     <Content Include="client\sass\Layout\_grid.scss" />
@@ -173,6 +172,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\sass\Components\_filter.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Components\Filter\filter-overlay.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\javascripts\vendor\bower.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\sass\Components\_search.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\sass\Layout\_general.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

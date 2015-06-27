@@ -6,7 +6,9 @@
     <title>Car Comparison</title>
 </head>
 <body ng-app="carComparisonApp">
-    @RenderBody()
+    <div class="search">
+        @RenderBody()
+    </div>
 
     <link rel="stylesheet" type="text/css" href="~/client/stylesheets/main.css">
 
@@ -14,5 +16,9 @@
     <script src="client/javascripts/angular/services/carService.js"></script>
     <script src="client/javascripts/angular/controllers/results.js"></script>
     <script src="client/javascripts/angular/modules/app.js"></script>
+    <script src="client/javascripts/vendor/tympanus/classie.js"></script>
+    <script src="client/javascripts/vendor/tympanus/modernizr.custom.js"></script>
+    <script src="client/javascripts/site.js"></script>
 </body>
+
 </html>
