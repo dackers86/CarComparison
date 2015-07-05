@@ -1,47 +1,27 @@
 ﻿<div class="overlay overlay-hugeinc">
     <button type="button" class="overlay-close">Close Filter</button>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div ng-controller="filtersCtrl">
+        <div class="sidebar">
+            <div class="filter-container">
+                <div class="header">
+                    Manufacturers
+                </div>
+                <div class="content">
+                    <div ng-repeat="manufacturer in manufacturers">
+                        <input type="checkbox" ng-model="carFilter.manufacturers[manufacturer.id]">{{manufacturer.name}}
+                    </div>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="header">
+                    Models
+                </div>
+                <div class="content">
+                    <div ng-repeat="car in cars | filter:isFiltered" class="row">
+                        <input type="checkbox" ng-model="carFilter.models[car.model.id]">{{car.model.name}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-@*<div ng-controller="resultsCtrl">
-
-    <div class="sidebar">
-        <div class="filter-container">
-            <div class="header">
-                Manufacturers
-            </div>
-            <div class="content">
-                <div ng-repeat="manufacturer in manufacturers">
-                    <input type="checkbox" ng-model="carFilter.manufacturers[manufacturer.id]">{{manufacturer.name}}
-                </div>
-            </div>
-        </div>
-        <div class="filter-container">
-            <div class="header">
-                Models
-            </div>
-            <div class="content">
-                <div ng-repeat="car in cars | filter:isFiltered" class="row">
-                    <input type="checkbox" ng-model="carFilter.models[car.model.id]">{{car.model.name}}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div ng-repeat="car in cars | filter:isFiltered" class="row">
-            <div class="col">
-                {{car.manufacturer.name}} {{car.model.name}}
-            </div>
-        </div>
-    </div>
-</div>*@
-

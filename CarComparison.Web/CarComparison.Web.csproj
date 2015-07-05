@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\images\cross.png" />
+    <Content Include="client\javascripts\angular\controllers\filters.js" />
     <Content Include="client\javascripts\angular\modules\app.js" />
     <Content Include="client\javascripts\angular\controllers\results.js" />
     <Content Include="client\javascripts\angular\services\carService.js" />

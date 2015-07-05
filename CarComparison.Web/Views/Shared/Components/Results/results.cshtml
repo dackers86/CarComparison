@@ -1,1 +1,7 @@
-﻿
+﻿<div class="container">
+    <div ng-repeat="car in cars | filter:isFiltered" class="row">
+        <div class="col">
+            {{car.manufacturer.name}} {{car.model.name}}
+        </div>
+    </div>
+</div>

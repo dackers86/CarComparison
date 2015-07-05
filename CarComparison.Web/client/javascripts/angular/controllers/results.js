@@ -1,29 +1,18 @@
-angular.module('carComparisonApp.controllers', []).
+angular.module('carComparisonApp.controllers.results', []).
 controller('resultsCtrl', ['$scope', '$filter', 'carService', function ($scope, $filter, carService) {
-
-    //carService.getHeaders.async().then(function (data) {
-    //    $scope.cars = data;
-    //});
 
    $scope.manufacturers = [];
    $scope.cars = [];
    $scope.cars.years = [];
-   $scope.carFilter = {
-       manufacturers: ""
-   }
 
    $scope.isFiltered = function (val) {
-       return $scope.carFilter.manufacturers[val.manufacturer.id];
-   }
+       return carService.carFilter.manufacturers[val.manufacturer.id];
+   };
 
-    carService.get.async().then(function (data) {
+   $scope.$watch(function () {
+       return carService.RestoreState;
+   });
 
-        angular.forEach(data, function (manufacturer, key) {
-            $scope.manufacturers.push(manufacturer);
+   $scope.cars = carService.RestoreState;
 
-            angular.forEach(manufacturer.models, function (model, key) {
-                $scope.cars.push({ model: model, manufacturer: manufacturer });
-            });
-        });
-    });
 }]);

@@ -8,13 +8,11 @@ C:\Code\CarComparison\CarComparison.Web\bin\System.Net.Http.WebRequest.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Helpers.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Http.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Http.WebHost.dll
-C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Razor.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.WebPages.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.WebPages.Razor.dll
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Helpers.xml
-C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.xml
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Razor.xml
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.WebPages.xml
 C:\Code\CarComparison\CarComparison.Web\bin\System.Web.WebPages.Deployment.xml
@@ -27,3 +25,5 @@ C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Http.WebHost.xml
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.dll
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.pdb
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.csprojResolveAssemblyReference.cache
+C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.dll
+C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.xml
