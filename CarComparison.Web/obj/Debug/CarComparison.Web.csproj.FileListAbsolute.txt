@@ -25,5 +25,3 @@ C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Http.WebHost.xml
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.dll
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.pdb
 C:\Code\CarComparison\CarComparison.Web\obj\Debug\CarComparison.Web.csprojResolveAssemblyReference.cache
-C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.dll
-C:\Code\CarComparison\CarComparison.Web\bin\System.Web.Mvc.xml
